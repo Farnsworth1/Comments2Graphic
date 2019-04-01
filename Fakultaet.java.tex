@@ -1,0 +1,64 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{{IMAGES/}}
+\usepackage{struktex}
+\title{Struktogramme von Kommentaren}
+\author{MAL \thanks{Institut für Struckturmechanik und Leichtbau}}
+\date{4.11.2017}
+\begin{document}
+\maketitle
+das Automatisch erstellte Struktogramm
+\begin{figure}
+\centering
+\includegraphics[width = 0.25\textwidth]{sla-logo}
+%\caption{a nice photo}
+\label{fig:logo1}
+\end{figure}
+
+
+\begin{struktogramm}(120,20)
+\assign
+{
+\begin{declaration}[Klassen Deklaration]
+\description{public class Fakultaet  
+}{Beschreibung der Klasse
+}
+\end{declaration}
+}
+\sub{	public static int berechneFakultaetInteger(int n)  
+}
+\assign[8]{$		int result 
+\gets 1;
+$}
+\forallin{For Schleife
+}
+\assign[8]{$			result 
+\gets result * i;
+$}
+\forallinend
+\return{		return result;
+}
+\sub{	public static long berechneFakultaetLong(int n)  
+}
+\assign[8]{$		long result 
+\gets 1;
+$}
+\forallin{For Schleife
+}
+\assign[8]{$			result 
+\gets result * i;
+$}
+\forallinend
+\return{		return result;
+}
+\sub{	public static void test(int n)  
+}
+\sub{	public static void main(String[] args)  
+}
+\end{struktogramm}
+\end{document}

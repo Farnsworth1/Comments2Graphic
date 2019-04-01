@@ -1,0 +1,84 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{german}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{{IMAGES/}}
+\usepackage{struktex}
+\title{Struktogramm}
+\author{MAL}
+\date{4.11.2017}
+\begin{document}
+\maketitle
+das Automatisch erstellte Struktogramm
+\begin{figure}
+\centering
+\includegraphics[width = 0.25\textwidth]{sla-logo}
+%\caption{a nice photo}
+\label{fig:logo1}
+\end{figure}
+
+
+\begin{struktogramm}(120,20)
+\assign
+{
+\begin{declaration}[Klassen Deklaration]
+\description{Class ausfuellen
+}{Beschreibung der Klasse
+}
+\end{declaration}
+}
+\sub{Method ausfuellen
+}
+\while[8]{While Scleife
+}
+\forallin{For Schleife
+}
+\while[8]{While Scleife
+}
+\ifthenelse[8]{2}{1}{ausfuellen
+}{ja
+}{nein
+}
+\change
+\ifend
+\whileend
+\forallinend
+\forallin{For Schleife
+}
+\forallinend
+\assign[8]{			// clear all list elements
+}
+\whileend
+\sub{Method ausfuellen
+}
+\forallin{For Schleife
+}
+\ifthenelse[8]{2}{1}{ausfuellen
+}{ja
+}{nein
+}
+\change
+\ifend
+\assign[8]{ausfuellen
+$\gets$ausfuellen
+}
+\while[8]{While Scleife
+}
+\assign[8]{ausfuellen
+$\gets$ausfuellen
+}
+\whileend
+\ifthenelse[8]{2}{1}{ausfuellen
+}{ja
+}{nein
+}
+\change
+\ifend
+\forallinend
+\return{Return ausfuellen
+}
+\end{struktogramm}
+\end{document}
